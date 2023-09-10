@@ -10,7 +10,7 @@ function App() {
 		<QueryClientProvider client={queryClient}>
 			<ReactQueryDevtools initialIsOpen={true} />
 			<div className="absolute w-full h-full bg-slate-100 ">
-				<div className="absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%]">
+				<div className="relative text-center mt-10">
 					<SearchBox />
 				</div>
 			</div>
