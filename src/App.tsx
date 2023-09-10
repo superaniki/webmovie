@@ -9,8 +9,8 @@ function App() {
 	return (
 		<QueryClientProvider client={queryClient}>
 			<ReactQueryDevtools initialIsOpen={true} />
-			<div className="absolute w-full h-full bg-slate-100 ">
-				<div className="relative text-center mt-10">
+			<div className="absolute w-full min-h-full h-auto bg-slate-200 ">
+				<div className="relative text-center mt-10 ">
 					<SearchBox />
 				</div>
 			</div>

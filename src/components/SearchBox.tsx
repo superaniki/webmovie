@@ -49,7 +49,7 @@ function SearchBox() {
 	}
 
 	return (
-		<div className="min-w-[600px] min-h-[200px] bg-white border-grey border-[1px] shadow-md inline-block p-10">
+		<div className="min-w-[600px] min-h-[200px]  bg-slate-100 border-grey border-[1px] shadow-md inline-block p-10 mb-10">
 			<SearchInput enterCallback={handleEnter} />
 			<Results items={resultsData} max={5} isLoading={isLoading} />
 		</div>

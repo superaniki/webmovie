@@ -30,7 +30,7 @@ function SearchInput({ enterCallback }: SearchInputProps) {
 	return (
 		<div className="relative">
 			<label
-				className="relative top-4 mr-10 inline-block font-extrabold text-transparent mb-[20px] text-5xl 
+				className="relative top-3 mr-10 inline-block font-extrabold text-transparent mb-[20px] text-5xl 
         bg-clip-text bg-gradient-to-r from-purple-400 to-slate-300"
 			>
 				Search Movie
@@ -40,7 +40,7 @@ function SearchInput({ enterCallback }: SearchInputProps) {
 					onKeyDown={handleKeyDown}
 					value={searchQuery}
 					onChange={onInputChange}
-					className="border-4 rounded-xl p-2"
+					className="border-4 rounded-xl p-3 outline-none focus:border-blue-300 focus:border-4"
 				/>
 				{suggestions.length > 0 && (
 					<Dropdown>
