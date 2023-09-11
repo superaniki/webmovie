@@ -7,3 +7,4 @@ export type Movie = {
 	genres: string[];
 	duration: number;
 };
+

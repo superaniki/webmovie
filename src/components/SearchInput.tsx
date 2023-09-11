@@ -3,12 +3,14 @@ import { Axios } from 'axios';
 import { Dropdown, DropdownItem } from './Dropdown';
 
 type SearchInputProps = {
-	enterCallback: (value: string) => void;
+	keydownCallback?: (value: string) => void;
+	enterCallback?: (value: string) => void;
+	suggestions?: string[];
 };
 
-function SearchInput({ enterCallback }: SearchInputProps) {
+function SearchInput({ keydownCallback, enterCallback, suggestions = [] }: SearchInputProps) {
 	const [searchQuery, setSearchQuery] = useState<string>('');
-	const [suggestions, setSuggestions] = useState<[] | string[]>([]);
+	//const [suggestions, setSuggestions] = useState<[] | string[]>([]);
 
 	const onInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
 		const updatedValue = event.target.value;
@@ -23,7 +25,8 @@ function SearchInput({ enterCallback }: SearchInputProps) {
 
 	const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
 		if (event.key === 'Enter') {
-			enterCallback(searchQuery);
+			enterCallback !== undefined && enterCallback(searchQuery);
+			return;
 		}
 	};
 

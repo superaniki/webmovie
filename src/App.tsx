@@ -2,7 +2,6 @@ import './App.css';
 import { SearchBox } from './components/SearchBox';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
-
 const queryClient = new QueryClient();
 
 function App() {
