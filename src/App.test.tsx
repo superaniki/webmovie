@@ -1,14 +1,30 @@
 import React from 'react';
+import userEvent from '@testing-library/user-event';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import App from './App';
+import { SearchInput } from './components/ui/SearchInput';
+import { INPUT_PLACEHOLDER_TEXT, SEARCH_DELAY } from './constants';
 
-// https://github.com/testing-library/react-testing-library
+describe('Search Input', () => {
+	it('triggers a search query when pressing enter', () => {
+		const mockSearchQuery = jest.fn();
+		render(<SearchInput querySuggestionsCallback={() => {}} querySearchCallback={mockSearchQuery} />);
+		const input = screen.getByPlaceholderText(INPUT_PLACEHOLDER_TEXT);
 
-/*
-test('First test', () => {
-	render(<App />);
-	const linkElement = screen.getByText(/Funkar/i);
-	expect(linkElement).toBeInTheDocument();
+		userEvent.type(input, 'starwars');
+		userEvent.type(input, '{enter}');
+
+		expect(mockSearchQuery).toHaveBeenCalledWith('starwars');
+	});
+
+	it('trigger suggestion query when entering a letter', async () => {
+		const mockSuggestionsQuery = jest.fn();
+		render(<SearchInput querySuggestionsCallback={mockSuggestionsQuery} querySearchCallback={() => {}} />);
+		const input = screen.getByPlaceholderText(INPUT_PLACEHOLDER_TEXT);
+
+		userEvent.type(input, 's');
+		await new Promise((res) => setTimeout(res, SEARCH_DELAY));
+
+		expect(mockSuggestionsQuery).toHaveBeenCalledWith('s');
+	});
 });
-*/

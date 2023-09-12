@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { DropDown, DropDownItem } from './DropDown';
-import { INPUT_PLACEHOLDER_TEXT } from './../../constants';
+import { INPUT_PLACEHOLDER_TEXT, SEARCH_DELAY } from './../../constants';
 
 type SearchInputProps = {
 	querySuggestionsCallback: (value: string) => void;
@@ -26,7 +26,7 @@ function SearchInput({ querySuggestionsCallback, querySearchCallback, suggestion
 
 	const delayedSearch = debounce((value: string) => {
 		querySuggestionsCallback(value);
-	}, 100); // Adjust the delay as needed
+	}, SEARCH_DELAY); // Adjust the delay as needed
 
 	const onInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
 		const updatedValue = event.target.value;
@@ -43,7 +43,7 @@ function SearchInput({ querySuggestionsCallback, querySearchCallback, suggestion
 
 	const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
 		if (event.key === 'Enter') {
-			if (trimmedSuggestions !== undefined && selectedSuggestionIndex > -1) {
+			if (trimmedSuggestions.length > 0 && selectedSuggestionIndex > -1) {
 				selectSuggestion(selectedSuggestionIndex);
 			} else {
 				querySearchCallback(searchQuery);
