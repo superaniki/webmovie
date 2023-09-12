@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useQuery } from 'react-query';
 import { toast } from 'react-hot-toast';
 import { QUERY_URL } from './../constants';
-import type { Movie } from './movie';
+import type { Movie } from '../movie';
 
 function MovieQuery(searchString: string): { isLoading: boolean; error: unknown; isError: boolean; data: Movie[] } {
 	function fetchMovies() {

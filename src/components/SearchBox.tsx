@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { Results } from './Results';
-import { SearchInput } from './SearchInput';
-import { MovieQuery } from './MovieQuery';
-import { MovieSuggestionsQuery } from './MovieSuggestionsQuery';
+import { Results } from './ui/Results';
+import { SearchInput } from './ui/SearchInput';
+import { MovieQuery } from '../queries/MovieQuery';
+import { MovieSuggestionsQuery } from '../queries/MovieSuggestionsQuery';
 
 function SearchBox() {
 	const [searchString, setSearchString] = useState('');

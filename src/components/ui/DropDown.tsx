@@ -1,6 +1,6 @@
 import React from 'react';
 
-type DropdownItemProps = {
+type DropDownItemProps = {
 	index: number;
 	title: string;
 	clickCallback: (e: React.MouseEvent, index: number) => void;
@@ -8,7 +8,7 @@ type DropdownItemProps = {
 	selected: boolean;
 };
 
-function DropdownItem({ index, title, clickCallback, mouseEnterCallback, selected }: DropdownItemProps) {
+function DropDownItem({ index, title, clickCallback, mouseEnterCallback, selected }: DropDownItemProps) {
 	const selectedStyle = selected && 'bg-slate-200';
 	const handleMouseEnter = () => mouseEnterCallback(index);
 	const handleOnClick = (e: React.MouseEvent) => clickCallback(e, index);
@@ -25,7 +25,7 @@ function DropdownItem({ index, title, clickCallback, mouseEnterCallback, selecte
 	);
 }
 
-function Dropdown({ children }: { children?: React.ReactNode }) {
+function DropDown({ children }: { children?: React.ReactNode }) {
 	return (
 		<ul
 			className="absolute w-full bg-white shadow-md shadow-gray-600 text-lg rounded-xl self-start 
@@ -36,4 +36,4 @@ function Dropdown({ children }: { children?: React.ReactNode }) {
 	);
 }
 
-export { Dropdown, DropdownItem };
+export { DropDown, DropDownItem };

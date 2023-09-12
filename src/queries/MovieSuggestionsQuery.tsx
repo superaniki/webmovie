@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useQuery } from 'react-query';
 import { QUERY_URL } from './../constants';
-import type { Movie } from './movie';
+import type { Movie } from '../movie';
 
 function MovieSuggestionsQuery(searchString: string): { suggestionsLoading: boolean; suggestionsResult: string[] } {
 	function fetchMovies() {

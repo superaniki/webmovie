@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
-import { Dropdown, DropdownItem } from './Dropdown';
-import { INPUT_PLACEHOLDER_TEXT } from './../constants';
+import { DropDown, DropDownItem } from './DropDown';
+import { INPUT_PLACEHOLDER_TEXT } from './../../constants';
 
 type SearchInputProps = {
 	querySuggestionsCallback: (value: string) => void;
@@ -108,9 +108,9 @@ function SearchInput({ querySuggestionsCallback, querySearchCallback, suggestion
 					className="border-4 rounded-xl p-3 outline-none focus:border-blue-300 focus:border-4"
 				/>
 				{suggestions.length > 0 && displaySuggestions && (
-					<Dropdown>
+					<DropDown>
 						{trimmedSuggestions.map((item, index) => (
-							<DropdownItem
+							<DropDownItem
 								key={index}
 								index={index}
 								clickCallback={handleDropDownClickCallback}
@@ -119,7 +119,7 @@ function SearchInput({ querySuggestionsCallback, querySearchCallback, suggestion
 								title={item}
 							/>
 						))}
-					</Dropdown>
+					</DropDown>
 				)}
 			</div>
 		</div>

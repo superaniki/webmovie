@@ -1,5 +1,5 @@
 import React from 'react';
-import type { Movie } from './movie';
+import type { Movie } from '../../movie';
 
 type ResultsProps = {
 	items: Movie[] | [];
