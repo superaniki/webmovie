@@ -99,6 +99,7 @@ function SearchInput({ querySuggestionsCallback, querySearchCallback, suggestion
 			</label>
 			<div className="inline-block relative">
 				<input
+					placeholder="movie title..."
 					ref={inputRef}
 					onKeyDown={handleKeyDown}
 					value={searchQuery}
