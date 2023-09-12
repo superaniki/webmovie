@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { Dropdown, DropdownItem } from './Dropdown';
+import { INPUT_PLACEHOLDER_TEXT } from './../constants';
 
 type SearchInputProps = {
 	querySuggestionsCallback: (value: string) => void;
@@ -99,7 +100,7 @@ function SearchInput({ querySuggestionsCallback, querySearchCallback, suggestion
 			</label>
 			<div className="inline-block relative">
 				<input
-					placeholder="movie title..."
+					placeholder={INPUT_PLACEHOLDER_TEXT}
 					ref={inputRef}
 					onKeyDown={handleKeyDown}
 					value={searchQuery}
