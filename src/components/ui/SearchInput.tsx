@@ -103,7 +103,7 @@ function SearchInput({ querySuggestionsCallback, querySearchCallback, suggestion
 					placeholder={INPUT_PLACEHOLDER_TEXT}
 					ref={inputRef}
 					onKeyDown={handleKeyDown}
-					value={searchQuery}
+					value={searchQuery || ''}
 					onChange={onInputChange}
 					className="border-4 rounded-xl p-3 outline-none focus:border-blue-300 focus:border-4"
 				/>
