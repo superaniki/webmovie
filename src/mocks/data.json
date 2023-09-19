@@ -1,0 +1,247 @@
+[
+  {
+    "id": "fbe15159-c1cf-4516-b7bd-5e77ac84d166",
+    "name": "The Shawshank Redemption",
+    "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+    "thumbnail": "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "rating": 9.3,
+    "duration": 8520,
+    "genres": [
+      "drama"
+    ],
+    "releasedAt": "1994-10-13T22:00:00.000Z"
+  },
+  {
+    "id": "0c7eac39-9fe1-4892-bdde-7c4112355712",
+    "name": "Schindler's List",
+    "description": "In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
+    "thumbnail": "https://m.media-amazon.com/images/M/MV5BNDE4OTMxMTctNmRhYy00NWE2LTg3YzItYTk3M2UwOTU5Njg4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "rating": 8.9,
+    "duration": 11700,
+    "genres": [
+      "biography",
+      "drama",
+      "history"
+    ],
+    "releasedAt": "1994-02-03T22:00:00.000Z"
+  },
+  {
+    "id": "a4128f03-e85d-405c-99e6-751673eb2cea",
+    "name": "The Lord of the Rings: The Return of the King",
+    "description": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
+    "thumbnail": "https://m.media-amazon.com/images/M/MV5BNzA5ZDNlZWMtM2NhNS00NDJjLTk4NDItYTRmY2EwMWZlMTY3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "rating": 8.9,
+    "duration": 12060,
+    "genres": [
+      "adventure",
+      "drama",
+      "fantasy"
+    ],
+    "releasedAt": "2003-12-16T22:00:00.000Z"
+  },
+  {
+    "id": "610e84f4-6c2f-4f35-b653-84ad691944d1",
+    "name": "The Lord of the Rings: The Fellowship of the Ring",
+    "description": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
+    "thumbnail": "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "rating": 8.8,
+    "duration": 10680,
+    "genres": [
+      "adventure",
+      "drama",
+      "fantasy"
+    ],
+    "releasedAt": "2001-12-18T22:00:00.000Z"
+  },
+  {
+    "id": "59c0665a-912f-4d00-bbcd-f670bcaf0858",
+    "name": "Forrest Gump",
+    "description": "The presidencies of Kennedy and Johnson, the events of Vietnam, Watergate, and other history unfold through the perspective of an Alabama man with an IQ of 75.",
+    "thumbnail": "https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY268_CR1,0,182,268_AL_.jpg",
+    "rating": 8.8,
+    "duration": 8520,
+    "genres": [
+      "drama",
+      "romance"
+    ],
+    "releasedAt": "1994-07-05T21:00:00.000Z"
+  },
+  {
+    "id": "9857f454-ff9e-426b-97aa-2e1ea29ef846",
+    "name": "Star Wars: Episode V - The Empire Strikes Back",
+    "description": "After the Rebels are brutally overpowered by the Empire on the ice planet Hoth, Luke Skywalker begins Jedi training with Yoda, while his friends are pursued by Darth Vader.",
+    "thumbnail": "https://m.media-amazon.com/images/M/MV5BYmU1NDRjNDgtMzhiMi00NjZmLTg5NGItZDNiZjU5NTU4OTE0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "rating": 8.7,
+    "duration": 7440,
+    "genres": [
+      "action",
+      "adventure",
+      "fantasy"
+    ],
+    "releasedAt": "1980-06-19T22:00:00.000Z"
+  },
+  {
+    "id": "25a250b1-34dd-4750-82db-d259951ffe6e",
+    "name": "The Lord of the Rings: The Two Towers",
+    "description": "While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard.",
+    "thumbnail": "https://m.media-amazon.com/images/M/MV5BNGE5MzIyNTAtNWFlMC00NDA2LWJiMjItMjc4Yjg1OWM5NzhhXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY268_CR0,0,182,268_AL_.jpg",
+    "rating": 8.7,
+    "duration": 10740,
+    "genres": [
+      "adventure",
+      "drama",
+      "fantasy"
+    ],
+    "releasedAt": "2002-12-17T22:00:00.000Z"
+  },
+  {
+    "id": "13f172d5-6f2c-4696-99d9-e0b0b81aefb6",
+    "name": "One Flew Over the Cuckoo's Nest",
+    "description": "A criminal pleads insanity and is admitted to a mental institution, where he rebels against the oppressive nurse and rallies up the scared patients.",
+    "thumbnail": "https://m.media-amazon.com/images/M/MV5BZjA0OWVhOTAtYWQxNi00YzNhLWI4ZjYtNjFjZTEyYjJlNDVlL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "rating": 8.7,
+    "duration": 7980,
+    "genres": [
+      "drama"
+    ],
+    "releasedAt": "1975-11-18T22:00:00.000Z"
+  },
+  {
+    "id": "da5c8dd5-d77a-4005-a76b-3b7d63ce3b5f",
+    "name": "Goodfellas",
+    "description": "The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners Jimmy Conway and Tommy DeVito in the Italian-American crime syndicate.",
+    "thumbnail": "https://m.media-amazon.com/images/M/MV5BY2NkZjEzMDgtN2RjYy00YzM1LWI4ZmQtMjIwYjFjNmI3ZGEwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "rating": 8.7,
+    "duration": 8760,
+    "genres": [
+      "biography",
+      "crime",
+      "drama"
+    ],
+    "releasedAt": "1990-09-20T21:00:00.000Z"
+  },
+  {
+    "id": "a8777e67-1f75-4860-a297-39c6accaacb8",
+    "name": "Seven Samurai",
+    "description": "A poor village under attack by bandits recruits seven unemployed samurai to help them defend themselves.",
+    "thumbnail": "https://m.media-amazon.com/images/M/MV5BOWE4ZDdhNmMtNzE5ZC00NzExLTlhNGMtY2ZhYjYzODEzODA1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SY1000_CR0,0,709,1000_AL_.jpg",
+    "rating": 8.6,
+    "duration": 12420,
+    "genres": [
+      "adventure",
+      "drama"
+    ],
+    "releasedAt": "1956-11-18T22:00:00.000Z"
+  },
+  {
+    "id": "b4a45c93-9c9c-4ffc-b9c6-63f92cf299fa",
+    "name": "Se7en",
+    "description": "Two detectives, a rookie and a veteran, hunt a serial killer who uses the seven deadly sins as his motives.",
+    "thumbnail": "https://m.media-amazon.com/images/M/MV5BOTUwODM5MTctZjczMi00OTk4LTg3NWUtNmVhMTAzNTNjYjcyXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "rating": 8.6,
+    "duration": 7620,
+    "genres": [
+      "crime",
+      "drama",
+      "mystery"
+    ],
+    "releasedAt": "1995-09-21T21:00:00.000Z"
+  },
+  {
+    "id": "929e4730-1e7f-488d-935e-a4be363db5fa",
+    "name": "Life Is Beautiful",
+    "description": "When an open-minded Jewish librarian and his son become victims of the Holocaust, he uses a perfect mixture of will, humor, and imagination to protect his son from the dangers around their camp.",
+    "thumbnail": "https://m.media-amazon.com/images/M/MV5BYmJmM2Q4NmMtYThmNC00ZjRlLWEyZmItZTIwOTBlZDQ3NTQ1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "rating": 8.6,
+    "duration": 6960,
+    "genres": [
+      "comedy",
+      "drama",
+      "romance"
+    ],
+    "releasedAt": "1999-02-11T22:00:00.000Z"
+  },
+  {
+    "id": "cb59b6db-6cd2-4961-b914-ee5a23be397d",
+    "name": "The Silence of the Lambs",
+    "description": "A young F.B.I. cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer, a madman who skins his victims.",
+    "thumbnail": "https://m.media-amazon.com/images/M/MV5BNjNhZTk0ZmEtNjJhMi00YzFlLWE1MmEtYzM1M2ZmMGMwMTU4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "rating": 8.6,
+    "duration": 7080,
+    "genres": [
+      "crime",
+      "drama",
+      "horror"
+    ],
+    "releasedAt": "1991-02-13T22:00:00.000Z"
+  },
+  {
+    "id": "3d658015-fc01-40b2-808d-49e7d358383e",
+    "name": "It's a Wonderful Life",
+    "description": "An angel is sent from Heaven to help a desperately frustrated businessman by showing him what life would have been like if he had never existed.",
+    "thumbnail": "https://m.media-amazon.com/images/M/MV5BZjc4NDZhZWMtNGEzYS00ZWU2LThlM2ItNTA0YzQ0OTExMTE2XkEyXkFqcGdeQXVyNjUwMzI2NzU@._V1_UY268_CR1,0,182,268_AL_.jpg",
+    "rating": 8.6,
+    "duration": 7800,
+    "genres": [
+      "drama",
+      "family",
+      "fantasy"
+    ],
+    "releasedAt": "1947-01-06T22:00:00.000Z"
+  },
+  {
+    "id": "97334219-4520-4e6c-bdc0-905a75914d32",
+    "name": "Star Wars: Episode IV - A New Hope",
+    "description": "Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader.",
+    "thumbnail": "https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "rating": 8.6,
+    "duration": 7260,
+    "genres": [
+      "action",
+      "adventure",
+      "fantasy"
+    ],
+    "releasedAt": "1977-05-24T22:00:00.000Z"
+  },
+  {
+    "id": "5669ac52-1389-4329-838d-15a14f449344",
+    "name": "Saving Private Ryan",
+    "description": "Following the Normandy Landings, a group of U.S. soldiers go behind enemy lines to retrieve a paratrooper whose brothers have been killed in action.",
+    "thumbnail": "https://m.media-amazon.com/images/M/MV5BZjhkMDM4MWItZTVjOC00ZDRhLThmYTAtM2I5NzBmNmNlMzI1XkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_UY268_CR0,0,182,268_AL_.jpg",
+    "rating": 8.6,
+    "duration": 10140,
+    "genres": [
+      "drama",
+      "war"
+    ],
+    "releasedAt": "1998-07-23T21:00:00.000Z"
+  },
+  {
+    "id": "a3614a1f-de11-4e15-8a41-50f8b01ba13c",
+    "name": "Spirited Away",
+    "description": "During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits, and where humans are changed into beasts.",
+    "thumbnail": "https://m.media-amazon.com/images/M/MV5BNmU5OTQ0OWQtOTY0OS00Yjg4LWE1NDYtNDRhYWMxYWY4OTMwXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UY268_CR3,0,182,268_AL_.jpg",
+    "rating": 8.6,
+    "duration": 7500,
+    "genres": [
+      "animation",
+      "adventure",
+      "family"
+    ],
+    "releasedAt": "2003-03-27T22:00:00.000Z"
+  },
+  {
+    "id": "a304cb18-b34f-4b95-b9b4-9fcee5704216",
+    "name": "Léon: The Professional",
+    "description": "Mathilda, a 12-year-old girl, is reluctantly taken in by Léon, a professional assassin, after her family is murdered. An unusual relationship forms as she becomes his protégée and learns the assassin's trade.",
+    "thumbnail": "https://m.media-amazon.com/images/M/MV5BZDAwYTlhMDEtNTg0OS00NDY2LWJjOWItNWY3YTZkM2UxYzUzXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UY268_CR4,0,182,268_AL_.jpg",
+    "rating": 8.5,
+    "duration": 6600,
+    "genres": [
+      "action",
+      "crime",
+      "drama"
+    ],
+    "releasedAt": "1994-11-17T22:00:00.000Z"
+  }
+]
