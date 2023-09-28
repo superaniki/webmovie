@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Results } from './ui/Results';
 import { SearchInput } from './ui/SearchInput';
+import { MovieResults } from './MovieResults';
 import { MovieQuery } from '../queries/MovieQuery';
 import { MovieSuggestionsQuery } from '../queries/MovieSuggestionsQuery';
 
@@ -26,8 +26,7 @@ function SearchBox() {
 				querySuggestionsCallback={handleQuerySuggestions}
 				suggestions={suggestionsResult}
 			/>
-			{!isError && <Results items={data} max={999} isLoading={isLoading} />}
-			{isError && <div>Problem loading search results...</div>}
+			<MovieResults items={data} max={999} isLoading={isLoading} isError={isError} />
 		</div>
 	);
 }

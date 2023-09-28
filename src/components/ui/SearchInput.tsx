@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { DropDown, DropDownItem } from './DropDown';
-import { INPUT_PLACEHOLDER_TEXT, SEARCH_DELAY } from './../../constants';
+import { INPUT_PLACEHOLDER_TEXT, SEARCH_DELAY } from '../../constants';
 
 type SearchInputProps = {
 	querySuggestionsCallback: (value: string) => void;
