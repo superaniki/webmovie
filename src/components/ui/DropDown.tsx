@@ -14,7 +14,7 @@ function DropDownItem({ index, title, clickCallback, mouseEnterCallback, selecte
 	const handleOnClick = (e: React.MouseEvent) => clickCallback(e, index);
 
 	return (
-		<li role="suggestion"
+		<li
 			onClick={handleOnClick}
 			onMouseEnter={handleMouseEnter}
 			className={`inline-block rounded-md p-1 select-none float-left ${selectedStyle}
