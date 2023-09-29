@@ -1,28 +1,28 @@
 import React from 'react';
 
-type ResultsItem = {
+type ResultsItemType = {
 	id: string, data: {
 		[key: string]: string | string[] | number
 	}
 }
 
 type ResultsProps = {
-	items: ResultsItem[];
+	items: ResultsItemType[];
 };
 
-function ResultListItem({ item }: { item: ResultsItem }) {
-	return <li className="block mb-8 p-5 bg-white border-slate-300 border-[1px]" key={item.id} >
+function ResultsItem({ item }: { item: ResultsItemType }) {
+	return <li className="block mb-8 p-5 bg-white border-slate-300 border-[1px]">
 		{Object.keys(item.data).map(type => {
 
 			let data: string | React.ReactNode = item.data[type];
 
 			if (Array.isArray(data)) {
-				data = data.map((arrayData, index) => <div key={index} className="inline pr-1 ">
+				data = data.map((arrayData, index) => <div key={item.id + index} className="inline pr-2 ">
 					{arrayData}
 				</div>)
 			}
 
-			return <div className="leading-tight pb-1">
+			return <div key={item.id + type} className="leading-tight pb-1">
 				<div className="float-left text-right w-[100px] pr-5 italic text-gray-500">{type}</div>
 				<div className="block text-left opacity-80 overflow-hidden overflow-ellipsis whitespace-nowrap max-w-[500px]">
 					{data}
@@ -33,12 +33,12 @@ function ResultListItem({ item }: { item: ResultsItem }) {
 	</li >
 }
 
-function Results({ items }: ResultsProps) {
+function ResultsList({ items }: ResultsProps) {
 	return <ul className="mt-10">
 		{items.map((item) =>
-			<ResultListItem item={item} />
+			<ResultsItem key={item.id} item={item} />
 		)}
 	</ul>
 }
 
-export { Results };
+export { ResultsList };
