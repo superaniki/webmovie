@@ -1,18 +1,18 @@
 import React from 'react';
+import { QueryClient, QueryClientProvider } from 'react-query';
 import userEvent from '@testing-library/user-event';
 import { render, screen, waitFor } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { SearchInput } from './components/ui/SearchInput';
-import { SearchBox } from './components/SearchBox';
+import { Input, InputWithSuggestions } from './components/ui/';
 
-import { INPUT_PLACEHOLDER_TEXT, SEARCH_DELAY } from './constants';
 import { server } from './mocks/server';
-import { QueryClient, QueryClientProvider } from 'react-query';
+import { MovieSearch } from './components/MovieSearch';
+import { INPUT_PLACEHOLDER_TEXT, SEARCH_DELAY } from './constants';
 
 describe('Search Input', () => {
-	it('triggers a search query when pressing enter', () => {
+	it('triggers a search query after typing "starwars" and hitting enter', () => {
 		const mockSearchQuery = jest.fn();
-		render(<SearchInput querySuggestionsCallback={() => { }} querySearchCallback={mockSearchQuery} />);
+		render(<Input onSubmit={mockSearchQuery} />);
 		const input = screen.getByPlaceholderText(INPUT_PLACEHOLDER_TEXT);
 
 		userEvent.type(input, 'starwars');
@@ -23,7 +23,7 @@ describe('Search Input', () => {
 
 	it('trigger suggestion query when entering a letter', async () => {
 		const mockSuggestionsQuery = jest.fn();
-		render(<SearchInput querySuggestionsCallback={mockSuggestionsQuery} querySearchCallback={() => { }} />);
+		render(<InputWithSuggestions onSuggestionSubmit={mockSuggestionsQuery} suggestions={[]} />);
 		const input = screen.getByPlaceholderText(INPUT_PLACEHOLDER_TEXT);
 		userEvent.type(input, 's');
 		await new Promise((res) => setTimeout(res, SEARCH_DELAY));
@@ -40,7 +40,7 @@ describe('Search Box', () => {
 		const queryClient = new QueryClient();
 
 		render(<QueryClientProvider client={queryClient}>
-			<SearchBox />
+			<MovieSearch />
 		</QueryClientProvider>
 		);
 		const input = screen.getByPlaceholderText(INPUT_PLACEHOLDER_TEXT);

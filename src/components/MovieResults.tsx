@@ -1,6 +1,5 @@
 import { Movie } from "../movie";
-import Spinner from "./ui/Spinner";
-import { Results } from "./ui/Results";
+import { Spinner, ResultsList } from "./ui/";
 
 type MovieResultsProps = {
   items: [] | Movie[];
@@ -22,7 +21,7 @@ function MovieResults({ items, max = 999, isLoading = false, isError = false }: 
     }
   })
 
-  const slicedItems = resultItems.slice(0, max);
+  const _resultItems = resultItems.slice(0, max);
 
   if (isError)
     return <div>Problem loading search results...</div>;
@@ -30,7 +29,7 @@ function MovieResults({ items, max = 999, isLoading = false, isError = false }: 
   if (isLoading)
     return <Spinner />
 
-  return <Results items={slicedItems} />
+  return <ResultsList items={_resultItems} />
 }
 
 export { MovieResults };
